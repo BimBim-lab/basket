@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+h1{
+    font-family:'Cursed Timer ULiL';
+    font-size: 60px;
+}
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.team h1, .team h2, .team h3{
+    margin: 30px;
+}
+#number-home, #number-guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;          /* fixed width */
+  height: 100px;         /* fixed height */
+  font-size: 48px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box; /* makes padding + border included in size */
+  text-align: center;
+}
+
+.team{
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    
+}
+.score-button{
+    display: flex;
+    list-style: none;      /* Remove bullet points */
+    margin: 30px auto;
+    padding: 0;
+    gap: 12px;             /* Space between items */
+    justify-content: center;
+      
+}
+
+
+
