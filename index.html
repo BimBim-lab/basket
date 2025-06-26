@@ -13,6 +13,16 @@
                     <li><button onclick="haddTwo()">+2</button></li>
                     <li><button onclick="haddThree()">+3</button></li>
                 </ul>
+                <div>
+                    <span>Foul: </span>
+                    <span id="foul-home">0 </span> 
+                    <button onclick="addFoul('home')">+1</button>
+                </div>
+                <div>
+                    <span>Bonus: </span> 
+                    <span id="bonus-home">No</span> 
+                     <button onclick="toggleBonus('home')">Toggle</button> 
+                </div>
             </div>
             <div class="team">
                 <h2>Away</h2>
@@ -22,7 +32,30 @@
                     <li><button onclick="gaddTwo()">+2</button></li>
                     <li><button onclick="gaddThree()">+3</button></li>
                 </ul>
+                <div>
+                            <span>Foul: </span>
+                            <span id="foul-guest">0 </span> 
+                            <button onclick="addFoul('guest')">+1</button>
+                        </div>
+                        <div>
+                            <span>Bonus: </span> 
+                            <span id="bonus-guest">No</span> 
+                            <button onclick="toggleBonus('guest')">Toggle</button> 
+                        </div>
             </div>
+        </div>
+        <div class="bottom">
+                <div id="timer">12:00</div>
+                <div>
+                <button onclick="startTimer()">Start</button> 
+                <button onclick="resetTimer()">Reset</button>
+                </div>
+                    <div>Period: <span id="period">1</span> 
+                        <button onclick="nextPeriod()">Next</button>
+                    </div>
+                <div id="leader">Leader:
+                </div>
+                <button onclick="fullReset()">Full Reset</button>
         </div>
         <script src="index.js"></script>
     </body>
