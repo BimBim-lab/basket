@@ -18,27 +18,33 @@ let foulguest = document.getElementById("foul-guest")
 function haddOne(){
     resulth +=1
     numHome.textContent = resulth
+    leader()
 }
 function haddTwo(){
     resulth += 2
     numHome.textContent = resulth
+    leader()
 }
 function haddThree(){
     resulth += 3
     numHome.textContent = resulth
+    leader()
 }
 
 function gaddOne(){
     resultg += 1
     numGuest.textContent = resultg
+    leader()
 }
 function gaddTwo(){
     resultg += 2
     numGuest.textContent = resultg
+    leader()
 }
 function gaddThree(){
     resultg += 3
     numGuest.textContent = resultg
+    leader()
 }
 
 
@@ -105,4 +111,14 @@ function updateDisplay() {
     document.getElementById("period").textContent = period;
     document.getElementById("foul-home").textContent = foulhome.textContent;
     document.getElementById("foul-guest").textContent = foulguest.textContent;
+}
+
+function leader() {
+    if (resulth > resultg) {
+        document.getElementById("leader").textContent = "Home Team is Leading";
+    } else if (resultg > resulth) {
+        document.getElementById("leader").textContent = "Guest Team is Leading";
+    } else {
+        document.getElementById("leader").textContent = "It's a Tie";
+    }
 }
