@@ -87,6 +87,15 @@ function startTimer() {
     }, 1000);
    
 }
+
+function resetTimer(){
+    secondsLeft = 720; // Reset timer to 12 minutes
+    clearInterval(timer); // Clear any existing timer
+    updateDisplay();
+    startTimer(); // Start the timer again
+}
+
+
 function fullReset() {
     resulth = 0;
     resultg = 0;
